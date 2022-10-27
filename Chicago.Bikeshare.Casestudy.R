@@ -1,18 +1,23 @@
-# Setting up my environment
-# Importing library `tidyverse` and loading datasets
+# Installing Required Packages
+install.package("tidyverse")
+install.package("lubridate")
 library(tidyverse)
-tripdata_202004 <- read_csv("202004-divvy-tripdata.csv")
-tripdata_202005 <- read_csv("202005-divvy-tripdata.csv")
-tripdata_202006 <- read_csv("202006-divvy-tripdata.csv")
-tripdata_202007 <- read_csv("202007-divvy-tripdata.csv")
-tripdata_202008 <- read_csv("202008-divvy-tripdata.csv")
-tripdata_202009 <- read_csv("202009-divvy-tripdata.csv")
-tripdata_202010 <- read_csv("202010-divvy-tripdata.csv")
-tripdata_202011 <- read_csv("202011-divvy-tripdata.csv")
-tripdata_202012 <- read_csv("202012-divvy-tripdata.csv")
-tripdata_202101 <- read_csv("202101-divvy-tripdata.csv")
-tripdata_202102 <- read_csv("202102-divvy-tripdata.csv")
-tripdata_202103 <- read_csv("202103-divvy-tripdata.csv")
+library(lubridate)
+# Set Working Directory
+setwd("C:\Users\Kyle\Desktop\divvy-tripdata.zip")
+# Uploading Datasets
+tripdata_2021.09 <- read_csv("202109-divvy-tripdata.csv")
+tripdata_2021.10 <- read_csv("202110-divvy-tripdata.csv")
+tripdata_2021.11 <- read_csv("202111-divvy-tripdata.csv")
+tripdata_2021.12 <- read_csv("202112-divvy-tripdata.csv")
+tripdata_2022.01 <- read_csv("202201-divvy-tripdata.csv")
+tripdata_2022.02 <- read_csv("202202-divvy-tripdata.csv")
+tripdata_2022.03 <- read_csv("202203-divvy-tripdata.csv")
+tripdata_2022.04 <- read_csv("202204-divvy-tripdata.csv")
+tripdata_2022.05 <- read_csv("202205-divvy-tripdata.csv")
+tripdata_2022.06 <- read_csv("202206-divvy-tripdata.csv")
+tripdata_2022.07 <- read_csv("202207-divvy-tripdata.csv")
+tripdata_2022.08 <- read_csv("202208-divvy-tripdata.csv")
 
 # Combining all datasets
 tripdata <- rbind(tripdata_202004,
