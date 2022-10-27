@@ -3,8 +3,10 @@ install.package("tidyverse")
 install.package("lubridate")
 library(tidyverse)
 library(lubridate)
+
 # Set Working Directory
 setwd("C:\Users\Kyle\Desktop\divvy-tripdata.zip")
+
 # Uploading Datasets
 tripdata_2021.09 <- read_csv("202109-divvy-tripdata.csv")
 tripdata_2021.10 <- read_csv("202110-divvy-tripdata.csv")
